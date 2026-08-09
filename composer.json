@@ -1,0 +1,59 @@
+{
+    "name": "microscrap/open-gl",
+    "description": "OpenGL Bindings for The PHP OpenGL Extension",
+    "type": "library",
+    "version": "0.7.0",
+    "keywords": [
+        "framework",
+        "scrapyard-io",
+        "opengl",
+        "bindings"
+    ],
+    "license": "MIT",
+    "homepage": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/open-gl/0.7.x/overview",
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ext-opengl": "^0.7.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Microscrap\\Bindings\\OpenGL\\": "src/"
+        },
+        "files": [
+            "src/Helpers/gl-state.php",
+            "src/Helpers/gl-immediate.php",
+            "src/Helpers/gl-buffer.php",
+            "src/Helpers/gl-texture.php",
+            "src/Helpers/gl-shader.php",
+            "src/Helpers/gl-draw.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.7.x-dev",
+            "dev-main": "0.7.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

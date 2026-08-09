@@ -11,6 +11,11 @@
     ],
     "license": "MIT",
     "homepage": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/open-gl/0.7.x/overview",
+    "support": {
+        "docs": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/open-gl/0.7.x/overview",
+        "source": "https://github.com/microscrap/open-gl",
+        "issues": "https://github.com/microscrap/open-gl/issues"
+    },
     "authors": [
         {
             "name": "Angel Gonzalez",
@@ -51,7 +56,8 @@
     "extra": {
         "branch-alias": {
             "dev-master": "0.7.x-dev",
-            "dev-main": "0.7.x-dev"
+            "dev-main": "0.7.x-dev",
+            "dev-0.7.x": "0.7.x-dev"
         }
     },
     "minimum-stability": "dev",
